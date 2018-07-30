@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Contacto{% endblock %}
+
+{% block body %}
+
+    <main>
+
+		<form class="centrado_a_1500">						
+		
+			<div class="centrado_a_1500">
+				<label class="centrado_a_1500" for="nombre">Su nombre:</label> <br>
+				<input class="centrado_a_1500" type="text" name="nombre"> 	
+			</div>
+
+			<div class="centrado_a_1500">
+				<label class="centrado_a_1500" for="email">Email:</label> <br>
+				<input class="centrado_a_1500" type="email" name="nombre"> 	
+			</div>
+
+			<div class="centrado_a_1500">
+				<label class="centrado_a_1500" for="nombre">Asunto:</label> <br>
+				<input class="centrado_a_1500" type="text" name="nombre"> 	
+			</div>
+
+			<div class="centrado_a_1500">
+				<label class="centrado_a_1500" for="nombre">Su mensaje:</label> <br>
+				<textarea class="centrado_a_1500" name="comment" ></textarea>
+			</div>			
+
+			<input id="enviar" type="submit" value="Enviar">	
+
+		</form>
+
+    </main>
+
+{% endblock %}

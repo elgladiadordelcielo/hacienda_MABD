@@ -1,0 +1,80 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Inicio{% endblock %}
+
+        {% block body %}
+
+            <main>
+
+                <div class="centrado_a_1500 autoplay">
+
+                    <div> <img class="centrado_a_1500" src="{{asset('images/slide1.png')}}" alt="fotos"> </div>
+
+                    <div> <img class="centrado_a_1500" src="{{asset('images/slide2.png')}}" alt="fotos"> </div>
+
+                    <div> <img class="centrado_a_1500" src="{{asset('images/slide3.png')}}" alt="fotos"> </div>      
+                </div>
+
+                <div id="main_grid" class="centrado_a_1500">
+
+                    <div>
+
+                        <h2 class="H2_del_inicio">HACIENDA</h2>
+
+                        <img class="imagenes_chiquitas_de_inicio" src="{{asset('images/hacienda.jpg')}}" alt="hacienda">
+
+                        <p class="parrafos_inicio_main">
+                            Hacienda del Siglo XVIII situada en Sevilla, que principalmente se había destiando al cultivo del olivar.               
+                        </p>
+
+                        <a class="enlace_leer_mas" href="#" >LEER MÁS</a>   
+
+                    </div>
+
+                    <div>
+
+                        <h2 class="H2_del_inicio">BODAS</h2>
+
+                        <img class="imagenes_chiquitas_de_inicio" src="{{asset('images/bodas.jpg')}}" alt="bodas">
+
+                        <p class="parrafos_inicio_main">
+                            El mejor enclave para la celebración de tu boda. Reformada para acoger tu boda con las mayores comodidades.         
+                        </p>
+
+                        <a class="enlace_leer_mas" href="#" >LEER MÁS</a>                   
+
+                    </div>
+
+                    <div>
+
+                        <h2 class="H2_del_inicio">EVENTOS</h2>
+
+                        <img class="imagenes_chiquitas_de_inicio" src="{{asset('images/eventos.jpg')}}" alt="eventos">
+
+                        <p class="parrafos_inicio_main">
+                            Preparada para albergar cualquier evento importante: Reuniones de empresa, Bodas, Bautizos, fiestas y celebraciones.                
+                        </p>
+
+                        <a class="enlace_leer_mas" href="#" >LEER MÁS</a>   
+
+                    </div>
+
+                    <div>
+
+                        <h2 class="H2_del_inicio">COMO LLEGAR</h2>
+
+                        <img class="imagenes_chiquitas_de_inicio" src="{{asset('images/mapa.jpg')}}" alt="mapa de como llegar">
+
+                        <p class="parrafos_inicio_main">
+                            Situada a 4km de Sevilla, posee un amplio patio de limoneros y jardines ideal para los aperitivos de tu boda al aire libre.             
+                        </p>
+
+                        <a class="enlace_leer_mas" href="#" >LEER MÁS</a>           
+
+                    </div>      
+
+                </div>      
+
+            </main>
+
+        {% endblock %}

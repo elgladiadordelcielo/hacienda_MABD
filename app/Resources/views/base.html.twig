@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>{% block title %}{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    {% block stylesheets %}
+
+        <link rel="stylesheet" type="text/css" href="{{asset('css/slick.css')}}">    
+        <link rel="stylesheet" type="text/css" href="{{asset('css/slick-theme.css')}}">
+        <link rel="stylesheet" type="text/css" href="{{asset('css/estilo.css')}}">
+        <link rel="stylesheet" type="text/css" href="{{asset('css/cookies.css')}}">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">  
+
+    {% endblock %}
+
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+</head>
+
+    <body>
+
+        <div id="contenedor">
+
+            <header>
+
+                <div class="centrado_a_1470">
+                    <a id="logo"> <img src="{{asset('images/logo.png')}}" alt="logotipo"> </a>
+                    <nav>
+                        <ul id="menu_de_la_cabecera">       
+                            <li><a id="li_activo" class="enlaces_de_la_cabecera" href="{{path('Inicio')}}">INICIO</a></li>
+                            <li><a class="enlaces_de_la_cabecera" href="{{path('Contacto')}}" >SOBRE NOSOTROS</a></li>
+                            <li><a class="enlaces_de_la_cabecera" href="{{path('Donde_estamos')}}" >DONDE ESTAMOS</a></li>
+                            <li><a class="enlaces_de_la_cabecera" href="{{path('Sobre_nosotros')}}" >CONTACTO</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </header>
+
+        {% block body %}            
+
+        {% endblock %}
+
+            <footer>
+
+                <div id="linea" class="centrado_a_1470"> </div>
+
+                <div id="logo_footer">
+
+                    <img  src="{{asset('images/logo_footer.png')}}" alt="logo del footer">
+
+                </div>
+
+                <p>
+
+                    &copy; Hacienda Nuestra Señora de Guadalupe
+
+                </p>        
+
+            </footer>
+
+        </div> 
+
+    {% block javascripts %}
+
+        <script src="{{asset('js/jquery-3.3.1.js')}}"></script>
+        <script src="{{asset('js/slick.min.js')}}"></script>
+        <script src="{{asset('js/js.cookie.js')}}"></script>
+        <script src="{{asset('js/cookies.js')}}"></script>
+        <script src="{{asset('js/mi_javascript.js')}}"></script>
+
+    {% endblock %}
+</body>
+</html>
+

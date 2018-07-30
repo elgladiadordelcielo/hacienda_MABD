@@ -1,0 +1,226 @@
+*
+{
+	box-sizing: border-box;
+}
+
+body
+{
+	margin: 0px 0px;
+	font-family: 'Raleway', sans-serif
+}
+
+#contenedor
+{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+#imagen_home
+{
+	display: block;
+}
+
+.centrado_a_1470
+{
+	width: 98%;
+	margin: 0 auto;
+}
+
+.centrado_a_1500
+{
+	width: 100%;
+	margin: 0 auto;
+}
+
+#li_activo
+{
+	background-color: #53302e;	
+}
+
+.enlaces_de_la_cabecera
+{
+	text-decoration: none;
+	color: white;
+	padding: 32px 32px;
+	display: block;			
+}
+
+.enlaces_de_la_cabecera:hover
+{
+	background-color: #53302e;	
+}
+
+#menu_de_la_cabecera
+{
+	text-decoration: none;
+	list-style: none;
+	display: flex;
+	padding: 0;
+	margin: 0;
+	justify-content: space-around;	
+}
+
+nav
+{	
+	font-size: 14px;
+	padding: 0px 0px;
+	background-color: #98222d;	
+}
+
+#main_grid
+{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-column-gap: 20px; 
+	grid-row-gap: 20px;
+}
+
+.H2_del_inicio
+{	
+	text-align: center;
+	color: #a2a8ac;
+	letter-spacing: 3px; 
+}
+
+.imagenes_chiquitas_de_inicio
+{
+	border-radius: 10px;	
+	border: 5px solid #98222d;	
+	width: 100%;
+	max-width: 266px;
+	margin: 0 auto;
+	display: block;				
+}
+
+.parrafos_inicio_main
+{
+	color: #a2a8ac;
+	height: 80px; 
+}
+
+.enlace_leer_mas
+{
+	background-color: #cfc13e;	
+	margin: 0 auto;
+	color: white;
+	text-align: center;	
+	border-radius: 5px;
+	text-decoration: none;
+	padding: 15px;
+	display: block;
+	width: 200px;
+}
+
+#enviar
+{
+	margin-top: 30px;
+	background-color: #98222d;
+	padding: 20px 40px;
+	color: white;
+	border: none;
+}
+
+footer #linea
+{
+	background-color: #98222d;
+	height: 5px;
+}
+
+#logo_footer
+{
+	margin: 0 auto;
+	margin-top: 30px;
+	width: 255px;
+}
+
+footer
+{
+	margin-top: 50px;
+}
+
+footer p
+{
+	color: #a2a8ac;
+	text-align: center;
+}
+
+.slick-prev
+{
+	z-index: 1;
+    left: 25px;
+}
+
+.slick-next
+{
+    right: 25px;
+}
+
+.slick-dots
+{    
+    bottom: 25px;
+}
+
+@media only screen and (min-width: 400px) and (max-width: 700px)
+{
+	#menu_de_la_cabecera
+	{
+		display: block;		
+	}
+
+	#main_grid
+	{		
+		grid-template-columns: 1fr;		
+	}
+
+	#imagen_home
+	{
+		display: none;
+	}
+
+	#contenedor
+	{
+		width: 400px;	
+	}
+
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1000px)
+{
+	#menu_de_la_cabecera
+	{
+		display: block;		
+	}
+
+	#main_grid
+	{		
+		grid-template-columns: 1fr;		
+	}
+
+	#imagen_home
+	{
+		display: none;
+	}
+
+	#contenedor
+	{
+		width: 700px;	
+	}
+
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1200px)
+{
+	#main_grid
+	{		
+		grid-template-columns: 1fr 1fr;		
+	}
+
+	#contenedor
+	{
+		width: 850px;	
+	}
+}
+
+
+
+
